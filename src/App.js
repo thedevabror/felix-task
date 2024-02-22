@@ -1,13 +1,24 @@
 import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './themes/theme';
-import { SignUp } from './components'
+import { CssBaseline } from '@mui/material';
+import { Log, Panel, Sign } from './components';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-export default function App() {
+const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <SignUp />
+      <CssBaseline />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Log />} />
+          <Route path="/signin" element={<Sign />} />
+          <Route path="/panel" element={<Panel />} />
+        </Routes>
+      </Router>
     </ThemeProvider>
   );
 }
+
+export default App

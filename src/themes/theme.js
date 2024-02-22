@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material/styles';
-import { red } from '@mui/material/colors';
 
 const theme = createTheme({
   typography: {
@@ -10,14 +9,13 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: 'rgb(51, 51, 51)',
-    //   black: 'rgb(51, 51, 51)',
+      main: '#6200EE',
     },
     secondary: {
       main: '#f50057',
     },
     success: {
-        main: '#6200EE',         // custom button color (seafoam green)
+      main: '#6200EE',
       contrastText: '#ffffff',
     }
   },
