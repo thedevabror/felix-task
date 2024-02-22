@@ -56,16 +56,16 @@ const ModalComponent = ({open, setOpen}) => {
         .min(4, "Min length is 4"),
       author: Yup.string()
         .required("author is required")
-        .min(2, "Min length is 8")
+        .min(2, "Min length is 2")
         .max(20, "Max lenght is 20"),
       publisher: Yup.string()
         .required("publisher required")
-        .min(2, "Min length is 8")
-        .max(5, "Max lenght is 20"),
+        .min(2, "Min length is 2")
+        .max(5, "Max lenght is 5"),
       pageCount: Yup.string()
         .required("pageCount required")
-        .min(2, "Min length is 8")
-        .max(5, "Max lenght is 20"),
+        .min(2, "Min length is 2")
+        .max(5, "Max lenght is 5"),
     }),
     onSubmit: async (values) => {
         try {
