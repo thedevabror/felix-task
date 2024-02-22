@@ -13,8 +13,8 @@ const BookService = {
 		const {data} = await axios.delete(`/books/${id}`)
 		return data
 	},
-	async bookEdit(id, edit) {
-		const {data} = await axios.put(`/books/${id}`, edit)
+	async bookEdit(bookId, values) {
+		const {data} = await axios.put(`/books/${bookId}`, values)
 		return data
 	},
 }

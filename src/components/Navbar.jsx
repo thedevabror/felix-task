@@ -105,7 +105,7 @@ export default function Navbar() {
           aria-haspopup="true"
           color="inherit"
         >
-          <img src={profileLogo} alt="" />
+          <AccountCircle sx={{ color: "black" }} />
         </IconButton>
         <p>Profile</p>
       </MenuItem>
@@ -140,10 +140,10 @@ export default function Navbar() {
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
           <IconButton
               size="large"
-              aria-label="show 17 new notifications"
+              aria-label="show 2 new notifications"
               color="inherit"
             >
-              <Badge badgeContent={17} color="error">
+              <Badge badgeContent={2} color="error">
                 <NotificationsIcon sx={{ color: "black" }} />
               </Badge>
             </IconButton>

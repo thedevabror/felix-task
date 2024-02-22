@@ -51,7 +51,12 @@ export const SectionMain = styled("div")(({ theme }) => ({
 export const SectionBox = styled("div")(({ theme }) => ({
   padding: "0px 100px 0px 100px",
   display: "flex",
+  flexDirection: "column",
   justifyContent: "space-between",
+  [theme.breakpoints.up(655)]: {
+    flexDirection: "row",
+    // padding: "0px 100px 0px 100px",
+  },
   width: "100%",
   alignItems: "center",
   margin: "36px 0px"
@@ -69,9 +74,12 @@ export const SectionSpan = styled("span")(({ theme }) => ({
 
 export const SectionBooks = styled("div")(({ theme }) => ({
   width: "100%",
-  padding: "0px 100px 0px 100px",
+  padding: "0px 20px 0px 20px",
+  [theme.breakpoints.up("lg")]: {
+    padding: "0px 100px 0px 100px",
+  },
   display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(20rem, 1fr))",
+  gridTemplateColumns: "repeat(auto-fit, minmax(18rem, 1fr))",
   gap: "2rem",
   position: "relative",
   transition: "all 3s",
